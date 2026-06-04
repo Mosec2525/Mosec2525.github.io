@@ -319,6 +319,16 @@ h3 {
   border: 1px solid rgba(245, 158, 11, 0.36);
 }
 
+.soc-lab-cards .card {
+  min-height: 280px;
+}
+
+.soc-lab-cards .severity {
+  color: #d1fae5;
+  background: rgba(34, 197, 94, 0.14);
+  border-color: rgba(34, 197, 94, 0.34);
+}
+
 .card-links {
   display: flex;
   flex-wrap: wrap;

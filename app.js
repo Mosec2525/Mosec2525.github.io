@@ -92,6 +92,51 @@ const writeups = [
   }
 ];
 
+const socLabs = [
+  {
+    title: "Password Spray Investigation",
+    tag: "Lab 01",
+    text: "Identity triage lab for password spraying, successful login validation, VPN pivoting, and high-severity SOC reporting.",
+    url: "https://Mosec2525.github.io/learn-soc-with-me-lab-01-password-spray/",
+    action: "Open lab"
+  },
+  {
+    title: "Suspicious PowerShell",
+    tag: "Lab 02",
+    text: "Endpoint investigation lab covering Office child processes, encoded PowerShell, script block evidence, and EDR correlation.",
+    url: "https://Mosec2525.github.io/learn-soc-with-me-lab-02-suspicious-powershell/",
+    action: "Open lab"
+  },
+  {
+    title: "Phishing Login Investigation",
+    tag: "Lab 03",
+    text: "Email and cloud identity lab connecting phishing delivery, URL click, suspicious sign-in, MFA approval, and mailbox rules.",
+    url: "https://Mosec2525.github.io/learn-soc-with-me-lab-03-phishing-login/",
+    action: "Open lab"
+  },
+  {
+    title: "New Local Admin User",
+    tag: "Lab 04",
+    text: "Windows SOC lab for RDP logon review, command execution, local user creation, administrator membership, and containment.",
+    url: "https://Mosec2525.github.io/learn-soc-with-me-lab-04-new-local-admin-user/",
+    action: "Open lab"
+  },
+  {
+    title: "OAuth Consent Cloud Exfiltration",
+    tag: "Lab 05",
+    text: "Cloud/SaaS lab for OAuth consent phishing, token abuse, Graph API activity, DLP evidence, and app persistence.",
+    url: "https://Mosec2525.github.io/learn-soc-with-me-lab-05-oauth-consent-cloud-exfiltration/",
+    action: "Open lab"
+  },
+  {
+    title: "CI/CD OIDC Cloud IAM Anomaly",
+    tag: "Lab 06",
+    text: "DevSecOps cloud lab for GitHub Actions OIDC, AWS STS, IAM policy changes, S3 backup access, and CloudTrail evidence.",
+    url: "https://Mosec2525.github.io/learn-soc-with-me-lab-06-cicd-oidc-cloud-iam-anomaly/",
+    action: "Open lab"
+  }
+];
+
 function writeupCard(item) {
   return `
     <a class="card project-card" href="${item.url}" target="_blank" rel="noreferrer">
@@ -104,7 +149,12 @@ function writeupCard(item) {
 }
 
 const writeupCards = document.querySelector("#writeupCards");
+const socLabCards = document.querySelector("#socLabCards");
 
 if (writeupCards) {
   writeupCards.innerHTML = writeups.map(writeupCard).join("");
+}
+
+if (socLabCards) {
+  socLabCards.innerHTML = socLabs.map(writeupCard).join("");
 }
