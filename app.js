@@ -134,6 +134,13 @@ const socLabs = [
     text: "DevSecOps cloud lab for GitHub Actions OIDC, AWS STS, IAM policy changes, S3 backup access, and CloudTrail evidence.",
     url: "https://Mosec2525.github.io/learn-soc-with-me-lab-06-cicd-oidc-cloud-iam-anomaly/",
     action: "Open lab"
+  },
+  {
+    title: "DNS Reverse Lookup Recon",
+    tag: "Lab 07",
+    text: "Splunk DNS lab using Zeek logs to hunt NXDOMAIN patterns, PTR reverse lookup enumeration, and MITRE T1018 discovery behavior.",
+    url: "https://Mosec2525.github.io/learn-soc-with-me-lab-07-dns-reverse-lookup-recon/",
+    action: "Open lab"
   }
 ];
 
