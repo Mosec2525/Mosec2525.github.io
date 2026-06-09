@@ -141,6 +141,13 @@ const socLabs = [
     text: "Splunk DNS lab using Zeek logs to hunt NXDOMAIN patterns, PTR reverse lookup enumeration, and MITRE T1018 discovery behavior.",
     url: "https://Mosec2525.github.io/learn-soc-with-me-lab-07-dns-reverse-lookup-recon/",
     action: "Open lab"
+  },
+  {
+    title: "FTP Executable Transfer",
+    tag: "Lab 08",
+    text: "Splunk FTP lab using Zeek logs to investigate clear-text credentials, blocked file actions, and successful svchost.exe downloads.",
+    url: "https://Mosec2525.github.io/learn-soc-with-me-lab-08-ftp-executable-transfer/",
+    action: "Open lab"
   }
 ];
 
