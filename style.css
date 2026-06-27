@@ -620,6 +620,15 @@ pre {
     flex-direction: column;
   }
 
+  .nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav a {
+    white-space: nowrap;
+  }
+
   main,
   .site-header {
     width: min(100% - 20px, 1180px);
